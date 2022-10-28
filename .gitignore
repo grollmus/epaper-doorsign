@@ -1,0 +1,12 @@
+# Ignore All
+/*
+
+# Expect this folders
+!/3d-models
+!/client
+!/docs
+!/server
+
+# Expect this files
+!.gitignore
+!README.md
