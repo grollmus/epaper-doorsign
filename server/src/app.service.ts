@@ -1,8 +1,10 @@
 import { Injectable } from '@nestjs/common';
+import { dummyRoomInfoData } from './data/dummy-room-info.data';
+import { RoomInfo } from './interfaces';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  dummyRoomData(): RoomInfo {
+    return dummyRoomInfoData;
   }
 }
