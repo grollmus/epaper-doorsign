@@ -1,0 +1,2 @@
+SSID = 'WLAN-G'
+PASSWORD = 'Xsimatic2015!'

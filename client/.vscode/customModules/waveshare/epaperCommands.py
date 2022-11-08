@@ -1,0 +1,14 @@
+from micropython import const
+
+PANEL_SETTINGS = const(0x00)
+POWER_SETTINGS = const(0x01)
+POWER_OFF = const(0x02)
+POWER_ON = const(0x04)
+DEEP_SLEEP = const(0x07)
+DISPLAY_BLACK_DATA = const(0x10)
+DISPLAY_REFRESH = const(0x12)
+DISPLAY_RED_DATA = const(0x13)
+DUAL_SPI = const(0x15)
+VCOM_DATA_INTERVAL_SETTINGS = const(0x50)
+TCON_SETTINGS = const(0x60)
+RESOLUTION_SETTINGS = const(0x61)
