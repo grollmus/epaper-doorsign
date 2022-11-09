@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@server/api-interfaces';
+import { Client } from '@server/api-interfaces';
 import { Observable } from 'rxjs';
 import { ClientService } from './services/client.service';
 
@@ -10,7 +9,7 @@ import { ClientService } from './services/client.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  clientList$: Observable<any>;
+  clientList$: Observable<Client[]>;
   constructor(clientService: ClientService) {
     this.clientList$ = clientService.getClientList();
   }

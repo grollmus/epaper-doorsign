@@ -1,12 +1,14 @@
 <table>
   <thead>
     <tr>
+      <th>_id</th>
       <th>Name</th>
       <th>Tag</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let client of clientList$ | async">
+      <td>{{ client._id }}</td>
       <td>{{ client.name }}</td>
       <td>{{ client.tag }}</td>
     </tr>
