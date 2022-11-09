@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Tag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let client of clientList$ | async">
+      <td>{{ client.name }}</td>
+      <td>{{ client.tag }}</td>
+    </tr>
+  </tbody>
+</table>

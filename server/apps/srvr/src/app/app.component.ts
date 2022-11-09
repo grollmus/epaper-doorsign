@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Message } from '@server/api-interfaces';
+import { Observable } from 'rxjs';
+import { ClientService } from './services/client.service';
 
 @Component({
   selector: 'server-root',
@@ -8,6 +10,8 @@ import { Message } from '@server/api-interfaces';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  clientList$: Observable<any>;
+  constructor(clientService: ClientService) {
+    this.clientList$ = clientService.getClientList();
+  }
 }
